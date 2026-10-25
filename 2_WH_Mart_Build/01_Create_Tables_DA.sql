@@ -1,1 +1,0 @@
--- Step 1 : DW - Create Star Schema Tables 
