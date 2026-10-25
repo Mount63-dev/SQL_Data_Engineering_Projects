@@ -48,11 +48,30 @@ FROM read_csv('https://storage.googleapis.com/sql_de/skills_job_dim.csv',
 
 
 
+SELECT 'Company Dim' AS table_name, COUNT(*) AS record_count FROM company_dim
+UNION ALL
+SELECT 'Skills Dim' AS table_name, COUNT(*) AS record_count FROM skills_dim
+UNION ALL
+SELECT 'Job Postings Fact' AS table_name, COUNT(*) AS record_count FROM job_postings_fact
+UNION ALL
+SELECT 'skills job Dim' AS table_name, COUNT(*) AS record_count FROM skills_job_dim;
 
 
 
+SELECT '=== Company Dimension Sample ===' AS info;
+SELECT * FROM company_dim LIMIT 5;
 
 
+SELECT '=== Skills Diemsion Sample ===' AS info;
+SELECT * FROM skills_dim LIMIT 5;
+
+
+SELECT '=== Job Postings Fact Sample ===' AS info;
+SELECT * FROM job_postings_fact LIMIT 5;
+
+
+SELECT '=== Skills Jobs Dimension Sample ===' AS info;
+SELECT * FROM skills_job_dim LIMIT 5;
 
 
 
