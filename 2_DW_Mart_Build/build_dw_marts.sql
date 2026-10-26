@@ -26,3 +26,6 @@
 
 
 
+
+-- Step 7 (BONUS): Mart - Create company prospecting mart (dimensional mart)
+.read 07_create_company_mart.sql
