@@ -1,6 +1,7 @@
-# End-to-End OLAP Data Warehouse & Analytical Marts (DuckDB)
+### [2_DW_Mart_Build/](./2_DW_Mart_Build/) - 🏗️ Data Warehouse & Mart Build: Production ETL Pipeline
 
-A multi-layer SQL data engineering pipeline that ingests raw job market CSV feeds from Google Cloud Storage into a normalized **Kimball Star Schema Data Warehouse**, then transforms the core model into four specialized **Serving Marts** designed for distinct downstream BI and analytical workloads.
+An end-to-end data engineering pipeline that transforms raw CSV files from Google Cloud Storage into a normalized star schema data warehouse, then builds analytical data marts.
+
 
 ![Data Pipeline Architecture](../Images/1_2_Project2_Data_Pipeline.png)
 
